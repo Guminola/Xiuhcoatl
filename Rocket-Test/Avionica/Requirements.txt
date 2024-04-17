@@ -1,0 +1,62 @@
+#Requerimientos 
+
+--Especificaciones Tecnicas a considerar-
+-No. Salidas/Interruptores de potencia : 4 Eyecciones/Igniciones
+-Corriente de intrr.potencia           : 2A
+-Protocolo de comuniciones BMP         :I2c
+-Protocolo de comuniciones ICM         :I2c
+-Protocolo de comuniciones XBEE        :SPI
+-Protocolo de comunicaciones de Fash   :SPI
+-Protocolo de comuniciones GPS         :USART 
+
+
+Requisitos de avionica.
+Generales:
+•	La aviónica tendrá 5 estados de operación 
+  o	Desenergizado (apagado)
+  o	Asegurado. (Stand by)
+  o	Armado
+  o	Vuelo
+  o	Landing
+•	Para asegurar las condiciones de asegurado y armado se podrán implementar las siguientes soluciones:
+  o	Secuencias de interruptores.
+  o	Bloqueo por altitud. 
+  o	Bloqueo por inclinación. (IMU)
+•	Para mas información del armado y el asegurado leer 13.1  del GDPE Armado y Asegurado de Dispositivos Energéticos
+•	Recuperación por evento Dual.
+•	Recuperación redundante.
+Comunicaciones:
+•	Telemetría mínima
+  o	Temperatura. (BMP)
+  o	Humedad relativa.--
+  o	Altura (distancia vertical Sobre el Nivel de Suelo hasta el vehículo durante la misión).(bmp) 
+  o	Ubicación.(GPS)
+  o	Nivel de las baterías (individualmente). --
+  o	Aceleraciones. (IMU)
+  o	Velocidad. (IMU)
+  o	Parámetros de misión. 
+•	Los sistemas de aviónica de todo el vehículo deberán ser verificados para que todos ellos puedan "hablar" entre sí. (aviónica, UCL,UR)
+•	Todos los datos deberán almacenarse al menos cada segundo en una tarjeta de memoria extraíble a bordo y transmitirse a una estación terrena en tiempo real. (flash)
+•	Los equipos deben poder cambiar rápidamente las frecuencias en sus estaciones de transmisión y recepción en el sitio, si es necesario.
+•	El equipo debe ser capaz de comunicarse con su estación receptora (estación terrena) y confirmar que las señales satelitales se adquieren y funcionan correctamente (Es decir el Modo de aseguramiento). (250kbps)
+-Diseño a prueba de vibracion y aceleracion de hasta 8g (Evitar componetes verticales y thrue hold)
+Software:
+•	Deben graficarse las variables de telemetría básica con respecto al tiempo y a la altura.
+•	Las variables recibidas en la estación terrena deben ser mostradas en tiempo real en unidades MKS.
+•	Todos los datos deberán almacenarse al menos cada segundo en una tarjeta de memoria extraíble a bordo y transmitirse a una estación terrena en tiempo real.
+Fuselaje:
+•	Todos los componentes de la aviónica deben estar contenidos dentro del módulo de aviónica del vehículo, (incluyendo las antenas).
+•	Las baterías deben ser de fácil acceso para ser reemplazadas en caso de ser necesario antes de su lanzamiento.
+•	La aviónica debe tener el interruptor principal en un lugar accesible desde el exterior del módulo de aviónica/electrónica.
+•	Como característica de armado de los dispositivos energéticos, es que deben estar ubicados en el fuselaje de tal manera que cualquier liberación inadvertida de energía por parte de estos dispositivos no afecte al personal que los arma.
+•	Todos los equipos deben etiquetar sus vehículos lanzadores con el nombre del equipo, el número y la frecuencia.
+•	Esta etiqueta debe ser duplicada en cada parte del vehículo que podría separarse ya sea por diseño o por un desensamble no programado.
+•	Todo el “cableado crítico de seguridad” deberá implementar una solución para aseguramiento de cables (p.e., abrazaderas, arneses, conductos de cables, etc.) que impida el enredo y el movimiento libre y o excesivo de longitudes importantes de cables debido a las cargas previstas durante el lanzamiento.
+
+Requisitos Generales de UCL (unidad de control de lanzamiento) y UR (Unidad Remota) [16.2 GDPE] :
+● La UCL debe integrar un dispositivo que permita la comunicación (envío y recepción de datos) de telemetría con la computadora de vuelo a bordo del vehículo. 
+● La UCL deberá contar con periféricos mínimos (p.e. pantalla, teclado, puertos, etc.) para realizar procesamiento y despliegue de datos, así como realizar modificaciones en el software de la aviónica a bordo del vehículo.
+ ● La UCL deberá ejecutar de manera autónoma la secuencia de lanzamiento, cuando ésta ya esté completamente configurada y con la autorización para lanzamiento. 
+● La UR debe transmitir el comando de lanzamiento a su vehículo, transmitido desde UCL. 
+● La UR deberá contar con cables de conexión que vayan hasta la plataforma de lanzamiento. Estos cables se conectan mediante pincillas tipo caimán o cocodrilo, a los dispositivos de ignición (por ejemplo, cerillos eléctricos) insertados en el motor. 
+● La tolerancia a los fallos, que incluye la funcionalidad de armado del sistema de propulsión, se proporciona para los cohetes de propelente sólido de una sola etapa, simples y no complejos, mediante la codificación de la señal y las llaves físicas de armado situadas en la UR de la plataforma y en la UCL.

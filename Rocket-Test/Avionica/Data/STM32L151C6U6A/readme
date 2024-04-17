@@ -1,0 +1,16 @@
+/*
+  This datasheet provides the ordering information and mechanical device characteristics of
+  the STM32L151x6/8/B-A and STM32L152x6/8/B-A ultra-low-power ARM ® Cortex®-M3
+  based microcontrollers product line.
+  The ultra-low-power STM32L151x6/8/B-A and STM32L152x6/8/B-A microcontroller family
+  includes devices in 3 different package types: from 48 to 100 pins. Depending on the device
+  chosen, different sets of peripherals are included, the description below gives an overview
+  of the complete range of peripherals proposed in this family.
+  These features make the ultra-low-power STM32L151x6/8/B-A and STM32L152x6/8/B-A
+  microcontroller family suitable for a wide range of applications:
+  •Medical and handheld equipment
+  •Application control and user interface
+  •PC peripherals, gaming, GPS and sport equipment
+  •Alarm systems, Wired and wireless sensors, Video intercom
+  •Utility metering
+*/

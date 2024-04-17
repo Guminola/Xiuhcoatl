@@ -1,0 +1,796 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32L1:STM32L151C6UxA STM32L151
+U 1 1 622BA5CA
+P 6000 2850
+F 0 "STM32L151" H 5950 4631 50  0000 C CNN
+F 1 "STM32L151C6UxA" H 5950 4540 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 5400 1350 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00277537.pdf" H 6000 2850 50  0001 C CNN
+	1    6000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 622C07DD
+P 3250 1800
+F 0 "#PWR0101" H 3250 1550 50  0001 C CNN
+F 1 "GND" H 3255 1627 50  0000 C CNN
+F 2 "" H 3250 1800 50  0001 C CNN
+F 3 "" H 3250 1800 50  0001 C CNN
+	1    3250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 622C1168
+P 3100 1850
+F 0 "#FLG0101" H 3100 1925 50  0001 C CNN
+F 1 "PWR_FLAG" H 3100 2023 50  0000 C CNN
+F 2 "" H 3100 1850 50  0001 C CNN
+F 3 "~" H 3100 1850 50  0001 C CNN
+	1    3100 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 1850 3100 1800
+Wire Wire Line
+	3100 1800 3200 1800
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 622C3999
+P 3250 1500
+F 0 "#PWR0102" H 3250 1350 50  0001 C CNN
+F 1 "+3.3V" H 3265 1673 50  0000 C CNN
+F 2 "" H 3250 1500 50  0001 C CNN
+F 3 "" H 3250 1500 50  0001 C CNN
+	1    3250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 622C45E8
+P 3100 1450
+F 0 "#FLG0102" H 3100 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3100 1623 50  0000 C CNN
+F 2 "" H 3100 1450 50  0001 C CNN
+F 3 "~" H 3100 1450 50  0001 C CNN
+	1    3100 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1450 3100 1500
+Wire Wire Line
+	3100 1500 3200 1500
+Wire Wire Line
+	3200 1500 3200 1550
+Wire Wire Line
+	3200 1550 3500 1550
+Wire Wire Line
+	3500 1550 3500 1450
+Connection ~ 3200 1500
+Wire Wire Line
+	3200 1500 3250 1500
+Wire Wire Line
+	3200 1800 3200 1750
+Wire Wire Line
+	3200 1750 3400 1750
+Wire Wire Line
+	3400 1750 3400 1950
+Wire Wire Line
+	5800 4800 5800 4450
+Connection ~ 3200 1800
+Wire Wire Line
+	3200 1800 3250 1800
+Wire Wire Line
+	5800 4800 5900 4800
+Wire Wire Line
+	5900 4800 5900 4450
+Wire Wire Line
+	5900 4800 6000 4800
+Wire Wire Line
+	6000 4800 6000 4450
+Connection ~ 5900 4800
+Wire Wire Line
+	6000 4800 6100 4800
+Wire Wire Line
+	6100 4800 6100 4450
+Connection ~ 6000 4800
+Wire Wire Line
+	6100 4800 6200 4800
+Wire Wire Line
+	6200 4800 6200 4450
+Connection ~ 6100 4800
+$Comp
+L Connector:Screw_Terminal_01x02 VIN1
+U 1 1 622C92D7
+P 650 1700
+F 0 "VIN1" H 568 1375 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 568 1466 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 650 1700 50  0001 C CNN
+F 3 "~" H 650 1700 50  0001 C CNN
+	1    650  1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 1600 3200 1550
+Connection ~ 3200 1550
+Wire Wire Line
+	3200 1700 3200 1750
+Connection ~ 3200 1750
+$Comp
+L pspice:CAP C1
+U 1 1 622CB31F
+P 3650 1700
+F 0 "C1" H 3828 1746 50  0000 L CNN
+F 1 "20" H 3828 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 3650 1700 50  0001 C CNN
+F 3 "~" H 3650 1700 50  0001 C CNN
+	1    3650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1450 3500 1450
+Connection ~ 3500 1450
+Wire Wire Line
+	3500 1450 3500 1350
+Wire Wire Line
+	3650 1950 3400 1950
+Connection ~ 3400 1950
+Wire Wire Line
+	3400 1950 3400 2200
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 622D4BAC
+P 1600 1600
+F 0 "SW1" H 1600 1867 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1600 1776 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 1600 1600 50  0001 C CNN
+F 3 "~" H 1600 1600 50  0001 C CNN
+	1    1600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1350 4300 1100
+Wire Wire Line
+	4300 1100 4600 1100
+Wire Wire Line
+	5800 1100 5800 1250
+Wire Wire Line
+	5800 1100 5900 1100
+Wire Wire Line
+	5900 1100 5900 1250
+Connection ~ 5800 1100
+Wire Wire Line
+	5900 1100 6000 1100
+Wire Wire Line
+	6000 1100 6000 1250
+Connection ~ 5900 1100
+Wire Wire Line
+	6000 1100 6100 1100
+Wire Wire Line
+	6100 1100 6100 1250
+Connection ~ 6000 1100
+$Comp
+L Regulator_Linear:AMS1117 VREG1
+U 1 1 622E9CB9
+P 2500 1400
+F 0 "VREG1" H 2500 1642 50  0000 C CNN
+F 1 "AMS1117" H 2500 1551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2500 1600 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2600 1150 50  0001 C CNN
+	1    2500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1600 2050 1400
+Wire Wire Line
+	2050 1400 2200 1400
+Wire Wire Line
+	2800 1400 2900 1400
+Wire Wire Line
+	2900 1400 2900 1600
+Wire Wire Line
+	2900 1600 3200 1600
+Wire Wire Line
+	2500 1700 3200 1700
+Connection ~ 2500 1700
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 62301711
+P 2000 1100
+F 0 "#FLG0103" H 2000 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 1273 50  0000 C CNN
+F 2 "" H 2000 1100 50  0001 C CNN
+F 3 "~" H 2000 1100 50  0001 C CNN
+	1    2000 1100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2050 1400
+Wire Wire Line
+	2050 1400 2050 1150
+Wire Wire Line
+	2050 1150 2000 1150
+Wire Wire Line
+	2000 1150 2000 1100
+$Comp
+L power:+12V #PWR0103
+U 1 1 623053D3
+P 1800 1200
+F 0 "#PWR0103" H 1800 1050 50  0001 C CNN
+F 1 "+12V" H 1815 1373 50  0000 C CNN
+F 2 "" H 1800 1200 50  0001 C CNN
+F 3 "" H 1800 1200 50  0001 C CNN
+	1    1800 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1400 1800 1400
+Wire Wire Line
+	1800 1400 1800 1200
+Wire Wire Line
+	2050 1600 1900 1600
+Wire Wire Line
+	1800 1700 1800 1750
+Wire Wire Line
+	1800 1750 1300 1750
+Wire Wire Line
+	1300 1750 1300 1700
+Wire Wire Line
+	1300 1700 850  1700
+Wire Wire Line
+	1800 1700 2500 1700
+Wire Wire Line
+	3500 1350 4150 1350
+$Comp
+L Device:LED ON1
+U 1 1 6231C532
+P 4150 1700
+F 0 "ON1" V 4097 1780 50  0000 L CNN
+F 1 "LED" V 4188 1780 50  0000 L CNN
+F 2 "LED_SMD:LED_0201_0603Metric" H 4150 1700 50  0001 C CNN
+F 3 "~" H 4150 1700 50  0001 C CNN
+	1    4150 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 1550 4150 1350
+Connection ~ 4150 1350
+Wire Wire Line
+	4150 1350 4300 1350
+$Comp
+L Device:R_Small_US R220
+U 1 1 6232D037
+P 3800 2200
+F 0 "R220" V 3595 2200 50  0000 C CNN
+F 1 "220" V 3686 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" H 3800 2200 50  0001 C CNN
+F 3 "~" H 3800 2200 50  0001 C CNN
+	1    3800 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 1850 4150 2200
+Wire Wire Line
+	4150 2200 3900 2200
+Wire Wire Line
+	3700 2200 3400 2200
+$Comp
+L Device:R_Small_US R10K1
+U 1 1 622FBE83
+P 4600 1850
+F 0 "R10K1" V 4395 1850 50  0000 C CNN
+F 1 "10K" V 4486 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" H 4600 1850 50  0001 C CNN
+F 3 "~" H 4600 1850 50  0001 C CNN
+	1    4600 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 1750 4600 1700
+Connection ~ 4600 1100
+Wire Wire Line
+	4600 1100 5800 1100
+Wire Wire Line
+	5300 1450 4700 1450
+Wire Wire Line
+	4600 1900 4600 1950
+Wire Wire Line
+	4600 1950 4700 1950
+Wire Wire Line
+	4700 1450 4700 1950
+Connection ~ 4600 1950
+Wire Wire Line
+	4600 1950 4600 2800
+$Comp
+L BMP390:BMP390L BMP390L1
+U 1 1 62339F34
+P 9950 1450
+F 0 "BMP390L1" H 9950 2117 50  0000 C CNN
+F 1 "BMP390L" H 9950 2026 50  0000 C CNN
+F 2 "BMP390L:XDCR_BMP390L" H 9950 1450 50  0001 L BNN
+F 3 "" H 9950 1450 50  0001 L BNN
+F 4 "1.7" H 9950 1450 50  0001 L BNN "PARTREV"
+F 5 "BOSCH" H 9950 1450 50  0001 L BNN "MANUFACTURER"
+F 6 "0.8 mm" H 9950 1450 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "Manufacturer Recommendation" H 9950 1450 50  0001 L BNN "STANDARD"
+	1    9950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L IAM-20680:IAM-20680 IAM-20680
+U 1 1 62346C04
+P 9650 2800
+F 0 "IAM-20680" H 9650 3567 50  0000 C CNN
+F 1 "IAM-20680" H 9650 3476 50  0000 C CNN
+F 2 "IAM-20680:PQFN50P300X300X80-16N" H 9650 2800 50  0001 L BNN
+F 3 "" H 9650 2800 50  0001 L BNN
+F 4 "TDK InvenSense" H 9650 2800 50  0001 L BNN "MF"
+F 5 "PQFN-16 TDK-InvenSense" H 9650 2800 50  0001 L BNN "PACKAGE"
+F 6 "None" H 9650 2800 50  0001 L BNN "PRICE"
+F 7 "Unavailable" H 9650 2800 50  0001 L BNN "AVAILABILITY"
+F 8 "Accelerometer and Gyroscope Digital 16-Pin LGA" H 9650 2800 50  0001 L BNN "DESCRIPTION"
+F 9 "IAM-20680" H 9650 2800 50  0001 L BNN "MP"
+F 10 "The center Exposed Pad (EP), for MPU devices is a No Connect (NC) pad. To avoid package stress, do not solder the EP to the PCB. Please refer to the document “AN-IVS-0002A-00”. As a result of these guidelines, the exposed pad has not been included on the PCB footprint. We’ve added a keep-out area under the exposed pad. Please don’t route traces or vias under the part, on the same side of the board" H 9650 2800 50  0001 L BNN "NOTES"
+	1    9650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 1050 10550 750 
+$Comp
+L Device:CP C3
+U 1 1 62342187
+P 10900 1450
+F 0 "C3" H 11018 1496 50  0000 L CNN
+F 1 "CP" H 11018 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 10938 1300 50  0001 C CNN
+F 3 "~" H 10900 1450 50  0001 C CNN
+	1    10900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 62342C21
+P 10950 2750
+F 0 "C2" V 11205 2750 50  0000 C CNN
+F 1 "CP" V 11114 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 10988 2600 50  0001 C CNN
+F 3 "~" H 10950 2750 50  0001 C CNN
+	1    10950 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 1300 10900 750 
+Wire Wire Line
+	10900 750  10550 750 
+$Comp
+L Device:LED RST1
+U 1 1 6234CA2D
+P 4400 2350
+F 0 "RST1" V 4347 2430 50  0000 L CNN
+F 1 "LED" V 4438 2430 50  0000 L CNN
+F 2 "LED_SMD:LED_0201_0603Metric" H 4400 2350 50  0001 C CNN
+F 3 "~" H 4400 2350 50  0001 C CNN
+	1    4400 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 2200 4400 1700
+Wire Wire Line
+	4400 1700 4600 1700
+Connection ~ 4600 1700
+Wire Wire Line
+	4600 1700 4600 1100
+Wire Wire Line
+	4400 2500 4400 2800
+Wire Wire Line
+	4400 2800 4600 2800
+Text Notes 7450 7500 0    50   ~ 0
+JG-170322
+$Comp
+L XBEEE:XB24CZ7UITB003 XBEE1
+U 1 1 62391410
+P 2950 6650
+F 0 "XBEE1" H 4200 6915 50  0000 C CNN
+F 1 "XB24CZ7UITB003" H 4200 6824 50  0000 C CNN
+F 2 "XBEEE:XB24CZ7UITB003" H 5300 6750 50  0001 L CNN
+F 3 "https://www.digi.com/resources/documentation/digidocs/pdfs/90001500.pdf" H 5300 6650 50  0001 L CNN
+F 4 "Zigbee Modules (802.15.4) Programmable XBee ZB S2C TH U.FL Antenna" H 5300 6550 50  0001 L CNN "Description"
+F 5 "7.874" H 5300 6450 50  0001 L CNN "Height"
+F 6 "Digi International" H 5300 6350 50  0001 L CNN "Manufacturer_Name"
+F 7 "XB24CZ7UITB003" H 5300 6250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "888-XB24CZ7UITB003" H 5300 6150 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=888-XB24CZ7UITB003" H 5300 6050 50  0001 L CNN "Mouser Price/Stock"
+F 10 "XB24CZ7UITB003" H 5300 5950 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/xb24cz7uitb003/digi-international" H 5300 5850 50  0001 L CNN "Arrow Price/Stock"
+	1    2950 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 6650 2    50   Input ~ 0
+GND
+Text GLabel 6200 4800 2    50   Input ~ 0
+GND
+$Comp
+L Connector:Conn_01x04_Female GPS6MV2
+U 1 1 623E31D2
+P 6300 7200
+F 0 "GPS6MV2" H 6192 6775 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 6192 6866 50  0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical" H 6300 7200 50  0001 C CNN
+F 3 "~" H 6300 7200 50  0001 C CNN
+	1    6300 7200
+	-1   0    0    1   
+$EndComp
+Text GLabel 6500 7000 2    50   Input ~ 0
+VCC
+Text GLabel 6500 7300 2    50   Input ~ 0
+GND
+Text GLabel 6500 7100 2    50   Input ~ 0
+RXGPS
+Text GLabel 6500 7200 2    50   Input ~ 0
+TXGPS
+Wire Wire Line
+	10350 2300 10800 2300
+Wire Wire Line
+	10950 2300 10950 2600
+Wire Wire Line
+	10950 2900 10950 3300
+Wire Wire Line
+	10950 3300 10900 3300
+Text GLabel 10950 3300 2    50   Input ~ 0
+GND
+Text GLabel 10900 1750 2    50   Input ~ 0
+GND
+Wire Wire Line
+	10900 1600 10900 1750
+Wire Wire Line
+	10900 1750 10550 1750
+Text GLabel 5450 7550 2    50   Input ~ 0
+VDD
+Text GLabel 10950 2300 2    50   Input ~ 0
+VDD
+Text GLabel 6100 1100 2    50   Input ~ 0
+VDD
+$Comp
+L Transistor_FET:IRF7309IPBF IRF73
+U 1 1 62399BC3
+P 9550 5450
+F 0 "IRF73" H 9250 5850 50  0000 L CNN
+F 1 "IRF7309IPBF" H 9050 5750 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9750 5375 50  0001 L CNN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf7309ipbf.pdf" H 9650 5450 50  0001 L CNN
+	1    9550 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 4050 2    50   Input ~ 0
+SDWIO
+Text GLabel 1050 3700 2    50   Input ~ 0
+SDWIO
+Text GLabel 6600 4150 2    50   Input ~ 0
+SDWCLK
+Text GLabel 1050 4100 2    50   Input ~ 0
+SDWCLK
+Text GLabel 9650 5850 0    50   Input ~ 0
+BATGND
+$Comp
+L Device:R_Small_US R1.8K1
+U 1 1 623D9F29
+P 9850 5550
+F 0 "R1.8K1" V 9650 5650 50  0000 C CNN
+F 1 "1.8K" V 9750 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" H 9850 5550 50  0001 C CNN
+F 3 "~" H 9850 5550 50  0001 C CNN
+	1    9850 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R2.7K1
+U 1 1 623DA7C1
+P 9850 5350
+F 0 "R2.7K1" V 9645 5350 50  0000 C CNN
+F 1 "2.7K" V 9736 5350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" H 9850 5350 50  0001 C CNN
+F 3 "~" H 9850 5350 50  0001 C CNN
+	1    9850 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R10K2
+U 1 1 623F34D3
+P 9250 5550
+F 0 "R10K2" V 9045 5550 50  0000 C CNN
+F 1 "10K" V 9136 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" H 9250 5550 50  0001 C CNN
+F 3 "~" H 9250 5550 50  0001 C CNN
+	1    9250 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 5450 9350 5450
+$Comp
+L Connector:Screw_Terminal_01x02 EYECCIÓN1
+U 1 1 623FAB2F
+P 10200 5150
+F 0 "EYECCIÓN1" H 10280 5142 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10280 5051 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 10200 5150 50  0001 C CNN
+F 3 "~" H 10200 5150 50  0001 C CNN
+	1    10200 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 5450 0    50   Input ~ 0
+EYECCIÓN
+Text GLabel 6600 4250 2    50   Input ~ 0
+IGNICION
+Text GLabel 10000 5150 0    50   Input ~ 0
+5V
+Text GLabel 1050 3800 2    50   Input ~ 0
+GND
+Text GLabel 1050 3900 2    50   Input ~ 0
+GND
+Text GLabel 1050 4200 2    50   Input ~ 0
+VDD
+Text GLabel 1050 4300 2    50   Input ~ 0
+VDD
+Text GLabel 5300 1650 0    50   Input ~ 0
+BOOT
+Text GLabel 1050 4600 2    50   Input ~ 0
+BOOT
+Text GLabel 1050 4700 2    50   Input ~ 0
+GND
+Text GLabel 10900 750  2    50   Input ~ 0
+VDD
+Text GLabel 10100 5450 2    50   Input ~ 0
+LEDEYECCIÓN
+Text GLabel 5300 2850 0    50   Input ~ 0
+LEDIGNICION
+Wire Wire Line
+	10550 1150 10550 1050
+Connection ~ 10550 1050
+Wire Wire Line
+	10350 3000 10750 3000
+Wire Wire Line
+	10900 3000 10900 3300
+Connection ~ 10900 3300
+Wire Wire Line
+	10900 3300 10750 3300
+Wire Wire Line
+	10350 3100 10750 3100
+Wire Wire Line
+	10750 3100 10750 3300
+Connection ~ 10750 3300
+Wire Wire Line
+	10750 3300 10350 3300
+Wire Wire Line
+	10350 2400 10800 2400
+Wire Wire Line
+	10800 2400 10800 2300
+Connection ~ 10800 2300
+Wire Wire Line
+	10800 2300 10950 2300
+Wire Wire Line
+	10350 2800 10750 2800
+Wire Wire Line
+	10750 2800 10750 3000
+Connection ~ 10750 3000
+Wire Wire Line
+	10750 3000 10900 3000
+Text GLabel 9350 1550 0    50   Input ~ 0
+BMPSDI
+Text GLabel 9350 1650 0    50   Input ~ 0
+BMPSDO
+Text GLabel 5300 3450 0    50   Input ~ 0
+BMPSDO
+Text GLabel 8950 2600 0    50   Input ~ 0
+GND
+Text GLabel 5450 7450 2    50   Input ~ 0
+TXBEE
+Text GLabel 5450 7350 2    50   Input ~ 0
+RXBEE
+Text GLabel 6600 3650 2    50   Input ~ 0
+RXBEE
+Text GLabel 6600 3750 2    50   Input ~ 0
+TXBEE
+Text GLabel 5350 1100 1    50   Input ~ 0
+VCC
+Text GLabel 5300 3350 0    50   Input ~ 0
+BMPSDI
+Text GLabel 4400 2800 0    50   Input ~ 0
+RESET
+Text GLabel 1050 3600 2    50   Input ~ 0
+RESET
+$Comp
+L Connector:Conn_01x12_Male LINK1
+U 1 1 623BBABC
+P 850 4100
+F 0 "LINK1" H 958 4781 50  0000 C CNN
+F 1 "Conn_01x12_Male" H 958 4690 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x06_P1.27mm_Vertical" H 850 4100 50  0001 C CNN
+F 3 "~" H 850 4100 50  0001 C CNN
+	1    850  4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 6241FBA4
+P 1100 2300
+F 0 "#FLG0105" H 1100 2375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1100 2473 50  0000 C CNN
+F 2 "" H 1100 2300 50  0001 C CNN
+F 3 "~" H 1100 2300 50  0001 C CNN
+	1    1100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 6241E282
+P 1100 2400
+F 0 "#FLG0104" H 1100 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 1100 2573 50  0000 C CNN
+F 2 "" H 1100 2400 50  0001 C CNN
+F 3 "~" H 1100 2400 50  0001 C CNN
+	1    1100 2400
+	-1   0    0    1   
+$EndComp
+Text GLabel 1100 2300 2    50   Input ~ 0
+5V
+Text GLabel 1100 2400 2    50   Input ~ 0
+BATGND
+$Comp
+L Connector:Screw_Terminal_01x02 BATIN1
+U 1 1 623B01E8
+P 900 2400
+F 0 "BATIN1" H 818 2075 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 818 2166 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 900 2400 50  0001 C CNN
+F 3 "~" H 900 2400 50  0001 C CNN
+	1    900  2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9850 5250 10000 5250
+Wire Wire Line
+	9650 5650 9650 5750
+Wire Wire Line
+	9250 5650 9250 5750
+Wire Wire Line
+	9250 5750 9650 5750
+Connection ~ 9650 5750
+Wire Wire Line
+	9650 5750 9650 5850
+Wire Wire Line
+	9850 5650 9850 5750
+Wire Wire Line
+	9850 5750 9650 5750
+Wire Wire Line
+	9850 5250 9650 5250
+Connection ~ 9850 5250
+Wire Wire Line
+	10100 5450 9850 5450
+Connection ~ 9850 5450
+$Comp
+L Transistor_FET:IRF7309IPBF IRF1
+U 1 1 62575D61
+P 9550 4250
+F 0 "IRF1" H 9250 4650 50  0000 L CNN
+F 1 "IRF7309IPBF" H 9050 4550 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9750 4175 50  0001 L CNN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf7309ipbf.pdf" H 9650 4250 50  0001 L CNN
+	1    9550 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 9650 4650 0    50   Input ~ 0
+BATGND
+$Comp
+L Device:R_Small_US R1.8K2
+U 1 1 62575D68
+P 9850 4350
+F 0 "R1.8K2" V 9650 4450 50  0000 C CNN
+F 1 "1.8K" V 9750 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" H 9850 4350 50  0001 C CNN
+F 3 "~" H 9850 4350 50  0001 C CNN
+	1    9850 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R2.7K2
+U 1 1 62575D6E
+P 9850 4150
+F 0 "R2.7K2" V 9645 4150 50  0000 C CNN
+F 1 "2.7K" V 9736 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" H 9850 4150 50  0001 C CNN
+F 3 "~" H 9850 4150 50  0001 C CNN
+	1    9850 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R10K3
+U 1 1 62575D74
+P 9250 4350
+F 0 "R10K3" V 9045 4350 50  0000 C CNN
+F 1 "10K" V 9136 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" H 9250 4350 50  0001 C CNN
+F 3 "~" H 9250 4350 50  0001 C CNN
+	1    9250 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 4250 9350 4250
+$Comp
+L Connector:Screw_Terminal_01x02 IGNICION1
+U 1 1 62575D7B
+P 10200 3950
+F 0 "IGNICION1" H 10280 3942 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10280 3851 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 10200 3950 50  0001 C CNN
+F 3 "~" H 10200 3950 50  0001 C CNN
+	1    10200 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 4250 0    50   Input ~ 0
+IGNICION
+Text GLabel 10000 3950 0    50   Input ~ 0
+5V
+Text GLabel 10100 4250 2    50   Input ~ 0
+LEDIGNICION
+Wire Wire Line
+	9850 4050 10000 4050
+Wire Wire Line
+	9650 4450 9650 4550
+Wire Wire Line
+	9250 4450 9250 4550
+Wire Wire Line
+	9250 4550 9650 4550
+Connection ~ 9650 4550
+Wire Wire Line
+	9650 4550 9650 4650
+Wire Wire Line
+	9850 4450 9850 4550
+Wire Wire Line
+	9850 4550 9650 4550
+Wire Wire Line
+	9850 4050 9650 4050
+Connection ~ 9850 4050
+Wire Wire Line
+	10100 4250 9850 4250
+Connection ~ 9850 4250
+Text GLabel 1100 3000 2    50   Input ~ 0
+SW1
+Text GLabel 1100 3100 2    50   Input ~ 0
+SW2
+$Comp
+L Connector:Screw_Terminal_01x02 SWITCH1
+U 1 1 6246E12F
+P 900 3100
+F 0 "SWITCH1" H 818 2775 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 818 2866 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 900 3100 50  0001 C CNN
+F 3 "~" H 900 3100 50  0001 C CNN
+	1    900  3100
+	-1   0    0    1   
+$EndComp
+Text GLabel 950  1600 1    50   Input ~ 0
+SW1
+Wire Wire Line
+	850  1600 950  1600
+Text GLabel 1200 1600 1    50   Input ~ 0
+SW2
+Wire Wire Line
+	1300 1600 1200 1600
+Text GLabel 6600 3950 2    50   Input ~ 0
+EYECCIÓN
+$EndSCHEMATC

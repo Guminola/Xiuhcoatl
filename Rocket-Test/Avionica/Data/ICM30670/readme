@@ -1,0 +1,11 @@
+/*
+  The single‐chip ICM‐30670 is the world’s first dual interface Optical
+  Image Stabilization (OIS) and 6‐axis motion tracking solution for User
+  Interface, UI, with an integrated sensor‐hub and framework software.
+  It combines industry leading gyroscope and accelerometer sensors
+  with an ARM Cortex‐M0 CPU, and a DMP4 Digital Motion ProcessorTM
+  in a small 4x4x0.98 mm LGA package.
+  The ICM‐30670 provides a dedicated I2C Master interface for
+  connecting to OIS controllers. Additionally, the DMP4 runs a gyro
+  filter algorithm that allows for best in class OIS performance.
+*/

@@ -1,0 +1,18 @@
+
+/*
+  VERSION: XIUHCOATL_IQUECH_2.4
+
+  Se modifican puertos (clemas) de Armado de Eyección, dejando solo uno para armar ambas etapas de eyeccion conectadas aun switch que interrumpe o arma ambas
+  asimismo como se corrige la tensión de Eyeccion de 5V-12V, 1A.
+  
+  PCB FILES
+  XIUHCOATL_IQUECH_2.01.zip incluye los siguientes Kicad docs:
+  
+  -".sch" = Schematic.
+  -".lib" = library.
+  -".net" = Netlist.
+  -".pro" = Project.
+  -".kicad_pcb" = PCB.
+
+  SPACE>COHETERIA>DIVEC>Jorge Guerrero
+*/

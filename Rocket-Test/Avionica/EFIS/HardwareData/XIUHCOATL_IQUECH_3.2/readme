@@ -1,0 +1,6 @@
+Xiuhcoatl Iquech Version 3.2 se integra:
+6 Conexiones con GPIO extra para escalabilidad de la placa y aplicaciones en futuros proyectos
+Asimismo pines de alimentacion VCC y GND
+
+Pendientes:
+-Sistema de medicion de nivel de baterias. 

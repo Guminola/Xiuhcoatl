@@ -1,0 +1,29 @@
+
+Selección de engran
+
+Cuando el interruptor DIP 1 está apagado, la salida VO es de 0 a 5 V.Cuando el interruptor DIP 1 está encendido,
+la salida VO es de 0 a 10 V. Cuando los interruptores DIP 1 y 2 están apagados, la salida VO es de 0 a 5 V. 
+Salida 4-20mA. El otro terminal de salida de corriente y salida de voltaje es GND, que es la misma polaridad 
+negativa que la fuente de alimentación.
+
+Ajuste cero
+
+1: Ajuste de voltaje En primer lugar, haga que el sistema inno-carga condición y ajuste el potenciómetro de 
+ajuste de voltaje cero (Vcero) para ajustar el punto cero. Utilice un multímetro para medir el voltaje VO de
+salida de modo que la indicación esté lo más cerca posible de la indicación de punto cero.
+
+2: ajuste de corriente En primer lugar, el sistema está en estado sin carga, ajuste el potenciómetro de punto
+cero actual (Izero), mida el E/S de salida actual con el bloque de corriente multímetro, trate de acercarlo a 
+4mA.
+
+Ajuste de ganancia
+
+1: ajuste de plenitud de voltaje cargará el sistema con un cierto valor de peso (rango recomendado: 80% ~ 
+100% FS), calcular el valor de voltaje de salida de acuerdo con la relación proporcional entre el peso cargado 
+y el valor de peso máximo, monitor de salida con un digitalmultimetro, voltaje giratorio pleno potenciómetro 
+(Vspan) ajusta la salida completa.
+
+2: Ajuste de plenitud actual Carga el sistema con un valor de peso más cercano (rango recomendado: 80%~100%FS),
+calcula el valor de corriente de salida según la relación proporcional entre el peso cargado y el valor máximo de
+peso, monitorea la salida con un digitalmultimetro y gira la corriente completa El Ispan ajusta las salidas a 
+escala completa cerca de 20mA.

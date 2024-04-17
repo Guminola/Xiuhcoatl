@@ -1,0 +1,5 @@
+/*
+  Directorio exclusivo para datos de componentes, placas y todo dentro de la placa de Avionica principal
+  Para agregar un Componente deera crear una carpeta con el Numero/Nombre de componente y dentro agregar documentos como Datasheet,
+  Modelo 3D, Footprint, Librerias y relacionados.
+*/

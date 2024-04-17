@@ -1,0 +1,6 @@
+Actualizacion.
+
+Se integran: 
+  conexiones de I2C para sensores BMP390 e IAM.
+  UART para el GPS.
+  SPI para la antena XBEE.

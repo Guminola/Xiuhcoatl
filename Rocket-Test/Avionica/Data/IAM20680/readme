@@ -1,0 +1,14 @@
+/*
+  The IAM-20680HT is a 6-axis MotionTracking device for
+  Automotive non-safety applications that combines a 3-
+  axis gyroscope and a 3-axis accelerometer in a thin
+  3x3x0.75mm3 (16-pin LGA) package. It also features a
+  4096-byte FIFO that can lower the traffic on the serial
+  bus interface and reduce power consumption by allowing
+  the system processor to burst read sensor data and then
+  go into a low-power mode. IAM-20680HT, with its 6-axis
+  integration, enables manufacturers to eliminate the
+  costly and complex selection, qualification, and system
+  level integration of discrete devices, guaranteeing
+  optimal motion performance.
+*/

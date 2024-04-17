@@ -1,0 +1,34 @@
+*Display VBUS level*
+
+*Using User Button*
+
+/**
+  * @brief EXTI line detection callbacks
+  * @param GPIO_Pin Specifies the pins connected EXTI line
+  * @retval None
+  */
+  void HAL_GPIO_EXTI_Falling_Callback(uint16_t GPIO_Pin)
+  {
+  	if (GPIO_Pin == USER_BUTTON_PIN) /* Displays in trace the VBUS value when the user button is pressed */
+  	{
+  		char _str[10];
+  		BSP_PWR_VBUSGetVoltage(0);
+  		sprintf(_str,"VBUS:%d", BSP_PWR_VBUSGetVoltage(0));
+  		USBPD_TRACE_Add(USBPD_TRACE_DEBUG, 0, 0, (uint8_t*)_str, strlen(_str));
+  	}
+  }
+  
+ *and the corresponding interrupt in src/stm32g0xx_it.c:*
+ 
+ /**
+  * @brief This function handles the external line 4_15 interrupt request.
+  * @retval None
+  */
+  void EXTI4_15_IRQHandler(void)
+  {
+  	HAL_GPIO_EXTI_IRQHandler(USER_BUTTON_PIN);
+  }
+  
+  
+  
+  

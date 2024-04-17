@@ -1,0 +1,4 @@
+/*
+  Correccion en los MOSFET (divisores de tension aterrizados a tierra)
+  Correccion en la comunicacion SPI de la xbee (maestro esclavo MISO-MISO, MOSI-MOSI)
+*/

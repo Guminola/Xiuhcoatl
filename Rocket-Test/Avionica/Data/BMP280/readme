@@ -1,0 +1,13 @@
+/*
+  The BMP280 consists of a Piezo-resistive pressure sensing element and a mixed-signal ASIC.
+  The ASIC performs A/D conversions and provides the conversion results and sensor specific
+  compensation data through a digital interface.
+  BMP280 provides highest flexibility to the designer and can be adapted to the requirements
+  regarding accuracy, measurement time and power consumption by selecting from a high
+  number of possible combinations of the sensor settings.
+  BMP280 can be operated in three power modes (see chapter 3.6):
+  -sleep mode
+  -normal mode
+  -forced mode
+
+*/
